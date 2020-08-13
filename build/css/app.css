@@ -1,0 +1,142 @@
+
+body {
+    position: relative;
+    font-size: 1.6rem;
+}
+
+.navigatorBox {
+position: fixed;
+width: 100%;
+    top: 90%;
+    
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column-gap: 2.5rem;
+    
+    
+    justify-content: center;
+    
+}
+
+.navigator {
+    padding: 1rem 1.5rem;
+    border-radius: 4rem;
+    border: none;
+    color: white ;
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+    transition: box-shadow .2s;
+}
+
+.navigator:active {
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.2);
+}
+
+.navigator--prev {
+   background-image: linear-gradient(to right, rgb(131,23,220), rgb(198, 11, 216));
+  
+}
+
+.navigator--next {
+    background-image: linear-gradient(to right, rgb(81, 194, 156), rgba(0, 125, 250, 0.972));
+
+}
+
+.glowPrev {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
+} 
+
+.glowNext {
+
+    animation-name: glowNext;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+
+@keyframes glowPrev {
+
+    0% {
+    }
+       
+
+  
+
+    100% {
+        box-shadow: 1rem 1rem 3rem rgba(131,23,220), 
+        -1rem -1rem 3rem  rgb(198, 11, 216),
+        1rem -1rem 3rem rgba(131,23,220),
+        -1rem 1rem 3rem  rgb(198, 11, 216);
+    }
+    
+}
+
+@keyframes glowNext {
+
+    0% {
+    }
+       
+
+  
+
+    100% {
+        box-shadow: 1rem 1rem 3rem rgb(81, 194, 156), 
+        -1rem -1rem 3rem  rgba(0, 125, 250, 0.972),
+        1rem -1rem 3rem rgba(0, 125, 250, 0.972),
+        -1rem 1rem 3rem  rgb(81, 194, 156);
+    }
+}
+
+
+
+
+
+
+
+
+/*  Animation */
+
+.HERO-enter {
+
+    transform: translateX(-1000px);
+}
+
+.HERO-enter-active {
+
+    transform: translateX(0);
+    transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+
+
+.HERO-exit-active {
+
+    transform: translateY(-100rem);
+    transition: all .5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: absolute;
+  
+}
+
+.DETAILS-enter {
+   
+    transform: translateY(100rem);
+  
+    
+}
+.DETAILS-enter-active {
+
+    transform: translateY(0);
+    transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.DETAILS-exit-active {
+
+    transform: scale(.2);
+    transition: all .5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: absolute;
+  
+}

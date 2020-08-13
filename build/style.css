@@ -1,0 +1,187 @@
+.page1, .page2 {
+
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+.page1-enter {
+    transform: scale(0.5);
+
+}
+
+.page1-enter-active {
+
+    transform:  scale(1.2);
+    transition: all 2s;
+}
+
+.page1-enter-done {
+
+    transform: scale(1);
+}
+
+.page1-exit {
+      
+   
+
+}
+
+.page1-exit-active {
+    transform: translate(-2000px) scale(.7) ;
+    transition: all 2s;
+
+}
+
+
+.page2-enter {
+    transform: scale(0.5);
+
+}
+
+.page2-enter-active {
+
+    transform:  scale(1.2);
+    transition: all 4s;
+}
+
+.page2-enter-done {
+
+    transform: scale(1);
+}
+
+.page2-exit {
+      
+    transform: scale(.6);
+    transition: all 2s;
+
+}
+
+.page2-exit-active {
+    transform: translate(-2000px) scale(.7) ;
+    transition: all 2s;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+   padding-right: 30px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+   
+
+}
+
+.navItem {
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 15px;
+    position: relative;
+  
+   
+}
+
+.dropdown {
+
+
+    position: absolute;
+    background-color: rgba(0,0,0,.9);
+    width: 200px;
+    height: 300px;
+    top: 58px;
+    right: 12px;
+    border-radius: 12px;
+    justify-content: center;
+    padding-top: 10px;
+    overflow: hidden;
+   
+}
+
+.dropdownItem {
+
+    background-color: rgba(0,0,0,.3);
+   
+    padding: 10px;
+    display: flex;
+    
+    
+}
+
+.iconRight {
+    display: inline-block;
+    margin-left: auto;
+    color: white;
+    font-weight: bold;
+}
+
+.iconLeft {
+
+
+}
+
+
+.navText {
+    margin-left: 20px;
+}
+
+
+
+.main-enter {
+    transform: translateX(-200px);
+}
+
+.main-enter-active {
+
+    transform: translateX(0px);
+    transition: transform .5s ease;
+}
+
+.main-exit-active {
+
+    transform: translateX(-200px);
+    transition: all .5s;
+}
+
+.main-exit-done {
+    opacity: 0;
+}
+
+
+.extra-enter {
+    transform: translateX(200px);
+}
+
+.extra-enter-active {
+
+    transform: translateX(0px);
+    transition: transform .5s ease;
+}
+
+.extra-exit {
+    transform: translateX(0px);
+}
+
+.extra-exit-active {
+
+    transform: translateX(200px);
+    transition: transform .5s ease;
+}
+
+.drop {
+
+}
+
