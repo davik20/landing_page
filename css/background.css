@@ -1,0 +1,75 @@
+.background {
+    display: flex;
+   grid-template-columns: max-content;
+    justify-content: center;
+   
+    width: 100%;
+}
+
+.imgBackground {
+    margin-top: 20rem;
+    background-image: linear-gradient(to right, var(--color-blue),var(--color-blue));
+    width: 75vw;
+    
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    
+    grid-row-gap: 1rem;
+    align-items: center;
+    
+    text-align: center;
+
+    padding: 6rem ;
+}
+
+.imgBackground h3 {
+    font-size: 4rem;
+line-height: 5.3rem;
+font-weight: 400;
+color: white;
+
+
+}
+
+.imgBackground p {
+    font-size: 1.8rem;
+line-height: 3.2rem;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.buttonBox .button--1 {
+    font-size: 1.6rem;
+    line-height: 4.4rem;
+    padding: .4rem 4.5rem;
+    
+    background-color: white;
+    border-radius: 2.9rem;
+    
+    text-align: center;
+border: none;
+    
+    color: #183B56;
+    
+    margin-top: 2.5rem;
+    margin-right: 2rem;
+}
+
+
+.buttonBox .button--2 {
+    font-size: 1.6rem;
+    line-height: 4.4rem;
+    padding: .4rem 4.5rem;
+    
+  background-color: transparent;
+    border-radius: 2.9rem;
+    border: 2px solid white;
+    
+    text-align: center;
+
+    
+    color: white;
+    
+    margin-top: 2.5rem
+}
+

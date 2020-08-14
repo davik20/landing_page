@@ -1,0 +1,95 @@
+.plan {
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.plan__grid {
+    margin-top: 8.4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px , 320px));
+    grid-column-gap: 3rem;
+    grid-row-gap: 3.9rem;
+}
+
+.pricing {
+    display: grid;
+   justify-content: center;
+    justify-items: center;
+    padding: 5rem 2.5rem;
+    grid-row-gap: 3.2rem;
+    background: #FFFFFF;
+box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03);
+border-radius: 8px;
+}
+
+.pricing1 {
+border-top: 2px solid var(--color-blue);
+}
+.pricing2 {
+    border-top: 2px solid #52C29D;;
+}
+.pricing3 {
+    border-top: 2px solid #F04D5D;
+}
+
+.pricing__name {
+    font-size: 2.4rem;
+line-height: 3.2rem;
+color: var(--color-purple)
+}
+
+.pricing__price {
+    font-size: 4rem;
+    line-height: 5.2rem;
+    font-weight: bold;
+}
+
+.pricing__price--1 {
+    color: var(--color-blue)
+}
+.pricing__price--2 {
+    color: #52C29D;
+}
+
+.pricing__price--3 {
+    color: #F04D5D;
+}
+
+.pricing__month {
+    font-size: 1.6rem;
+line-height: 2.4rem;
+margin-top: -2.5rem;
+}
+
+.pricing__description {
+    font-weight: normal;
+font-size: 1.6rem;
+line-height: 2.8rem;
+
+
+text-align: center;
+
+
+
+color: #7690A8;
+}
+
+.pricing .pricing__button {
+    font-size: 1.6rem;
+    line-height: 4.4rem;
+    padding: .4rem 4.5rem;
+    border: 2px solid  var(--color-purple);
+    background-color: white;
+    border-radius: 2.9rem;
+    
+    text-align: center;
+
+    
+    color: var(--color-purple);
+    margin-top: 2.5rem
+}
+
+.pricing3 .pricing__button--1  {
+    background-color:  var(--color-purple) ;
+    color: white;
+}
